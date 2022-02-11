@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "760102586355",
+    "project_id": "videoapp-ff238",
+    "storage_bucket": "videoapp-ff238.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760102586355:android:1af200f318fe251c0eb486",
+        "android_client_info": {
+          "package_name": "com.fsociety.videoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "760102586355-qqjec01dtntgf57ghiu593cqds7jnmdo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-ayiF_DO60TxOj_iGTr9CYVusbgN_oIg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "760102586355-qqjec01dtntgf57ghiu593cqds7jnmdo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
