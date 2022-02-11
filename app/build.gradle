@@ -38,4 +38,15 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //Circular ImageView
+    implementation "de.hdodenhof:circleimageview:3.1.0"
+    //Firebase UI 
+    implementation "com.firebaseui:firebase-ui-database:6.2.0"
+    //ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    //live data
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    //Material design
+    implementation "com.google.android.material:material:1.1.0"
 }
