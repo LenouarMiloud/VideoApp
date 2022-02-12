@@ -16,7 +16,7 @@
 
         <EditText
             android:id="@+id/commentEditText"
-            android:layout_width="175dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Type a comment"/>
 
@@ -24,7 +24,7 @@
             android:id="@+id/userImageView"
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:src=""/>
+            android:src="@drawable/ic_baseline_send_24"/>
 
 
     </LinearLayout>
