@@ -7,7 +7,7 @@ import android.widget.VideoView
 import androidx.recyclerview.widget.RecyclerView
 import com.fsociety.videoapp.R
 
-class VideViewHolder(view: View):RecyclerView.ViewHolder(view) {
+class VideoViewHolder(view: View):RecyclerView.ViewHolder(view) {
 
     val commentImage : ImageView = view.findViewById(R.id.commentImage)
     val likeImage : ImageView = view.findViewById(R.id.likeImage)
