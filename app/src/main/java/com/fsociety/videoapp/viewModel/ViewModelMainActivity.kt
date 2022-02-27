@@ -38,6 +38,9 @@ class ViewModelMainActivity: ViewModel() {
             override fun onBindViewHolder(holder: VideoViewHolder, position: Int, model: Video) {
                 holder.videoView.setVideoPath(model.url)
                 holder.videoView.setOnPreparedListener {
+
+                    it.start()
+
                     val videoRation = it.videoWidth / it.videoHeight.toFloat()
                     val screenRation = holder.videoView.width / holder.videoView.width.toFloat()
                     //calculate the scale
