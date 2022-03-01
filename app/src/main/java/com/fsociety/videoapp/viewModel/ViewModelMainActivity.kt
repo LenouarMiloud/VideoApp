@@ -74,25 +74,45 @@ class ViewModelMainActivity: ViewModel() {
 
 
                 }
+
                 holder.videoView.setOnInfoListener {
-
                         mp, what, extra ->
-
                     when (what) {
-
                         MediaPlayer.MEDIA_INFO_BUFFERING_START -> showLoading.value = 0
                         MediaPlayer.MEDIA_INFO_BUFFERING_END -> showLoading.value= 1
                         else -> 1
-
-
                     }
                     false
+                }
+
+                holder.videoView.setOnCompletionListener { mp ->
+                    mp?.start()
+                }
 
 
+                holder.likeImage.setOnClickListener{
+
+                    incrementLikes(adapter.getRef(position),holder)
+                }
+                holder.commentImage.setOnClickListener{
+                    commentReference.value = adapter.getRef(position).toString()
+                    initializeCommentAdapter(adapter.getRef(position))
+                }
+
+                holder.shareImage.setOnClickListener{
+                    val intent = Intent(Intent.ACTION_SEND)
+                    intent.type = "text/plain"
+                    val shareBody = model.url
+                    intent.putExtra(Intent.EXTRA_SUBJECT
+                        ,"Share video")
+                    intent.putExtra(Intent.EXTRA_TEXT
+                        , shareBody)
+
+                    it.context.startActivity(
+                        Intent.createChooser(intent, "Share video via")
+                    )
                 }
             }
-
         }
-
     }
-}
+            }
